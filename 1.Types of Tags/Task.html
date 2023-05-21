@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Call</title>
+    <style>
+        h1 {
+            text-align: center;
+            color:orange;
+            padding: 10px;
+            
+        }
+        button[type="submit"] {
+            background-color: orange;
+            width: 100%;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            font-size: medium
+            
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="phone"] {
+            width: 100%;
+        }
+
+        
+        .datetime-inputs {
+            display: inline-block;
+            vertical-align: top;
+            width: 50%;
+            box-sizing: border-box;
+            padding-right: 5px;
+        }
+
+        .datetime-inputs input {
+            display: inline-block;
+            vertical-align: top;
+            margin-bottom: 10px;
+            width: 50%;
+            box-sizing: border-box;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <h1>Book a Call</h1>
+        <h4 style="text-align: center;">
+            <em>Book a call slot and our representative will call you within 1hr of selected time.</em>
+        </h4>
+        <hr>
+        <br>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="phone">Phone:</label>
+            <input type="phone" id="phone" name="phone"><br><br>
+
+            <div class="datetime-inputs">
+                <label for="Time for Call">Time for Call:</label>
+                <input type="time" id="Time for Call" name="Time for Call">
+            </div>
+
+            <div class="datetime-inputs">
+                <label for="Time for Date">Time for Date:</label>
+                <input type="date" id="call-date" name="Time for Date">
+            </div>
+            
+
+
+            <button type="submit">GET A CALL</button><br><br>
+        </form>
+        
+    </fieldset>
+</body>
+
+</html>
